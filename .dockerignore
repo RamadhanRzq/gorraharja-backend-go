@@ -1,0 +1,28 @@
+# Version control & CI
+.git
+.gitignore
+.github
+
+# Documentation
+*.md
+
+# Local environment / secrets
+.env
+.env.*
+
+# Build artifacts
+bin/
+out/
+tmp/
+
+# Coverage & test output
+coverage.out
+coverage.txt
+coverage.html
+*.test
+*.prof
+
+# Editor / OS noise
+.idea/
+.vscode/
+.DS_Store
