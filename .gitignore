@@ -1,1 +1,6 @@
 PRD.md
+.env
+*.db
+*.db-journal
+bin/
+/tmp/

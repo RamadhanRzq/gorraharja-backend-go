@@ -1,0 +1,16 @@
+services:
+  app:
+    build: .
+    environment:
+      PORT: 8080
+      DATABASE_URL: postgres://booking:booking@db:5432/booking?sslmode=disable
+      API_KEY: ${API_KEY:-}
+      ADMIN_API_KEY: ${ADMIN_API_KEY:-}
+      USER_API_KEY: ${USER_API_KEY:-}
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+
+volumes:
+  pgdata:
